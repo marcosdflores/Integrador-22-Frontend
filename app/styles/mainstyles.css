@@ -1,0 +1,53 @@
+html,body{
+    margin: 0;
+    height: 100%;
+    background-color: gray;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.left-bar{
+    background-color: rgb(0, 0, 0);
+    width: 80px;
+    height: 100%;
+    transition: 200ms ease;
+
+}
+
+.options{
+    line-height: 100px;
+    margin-left: 30px;
+}
+
+.profile{
+    line-height: 700px;
+    margin-left: 30px;
+}
+
+a{
+    margin-left: 10px;
+    font-size: 20px;
+    color:white
+}
+
+i{
+    font-size: 23px;
+    color: white;
+}
+
+.left-bar:hover{
+    width: 220px;
+
+}
+
+.links{
+    display: none;
+    text-decoration: none;
+}
+
+.left-bar:hover .links{
+    display: inline-block;
+}
