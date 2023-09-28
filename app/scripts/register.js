@@ -10,7 +10,8 @@ function register() {
         username: document.getElementById('username').value,
         email: document.getElementById('email').value,
         paswwordd: document.getElementById('paswwordd').value,
-        fecha_nacimiento: document.getElementById('fecha').value
+        fecha_nacimiento: document.getElementById('fecha').value,
+        imagen: "../assets/avatardefault.png"
     }
 
     fetch("http://127.0.0.1:5000/register", {
