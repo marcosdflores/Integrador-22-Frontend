@@ -12,25 +12,32 @@
             <div class="title">
                 Create account
             </div>
-            <div class="inputs">
-                <input class="input" placeholder="E-mail">
-            </div>
-            <div class="inputs">
-                <input class="input" placeholder="Username">
-            </div>
-            <div class="inputs">
-                <input class="input" placeholder="Name">
-            </div>
-            <div class="inputs">
-                <input class="input" placeholder="Last Name">
-            </div>
-            <div class="inputs">
-                <input class="input" placeholder="Password">
-            </div>
-            <div class="button">
-                <button class="register-button">Register</button>
-            </div>
+            <form id="registerForm"></form>
+                <div class="inputs">
+                    <input type="text" id="nombre" name="nombre" required class="input" placeholder="Name">
+                </div>
+                <div class="inputs">
+                    <input type="text" id="apellido" name="apellido" required class="input" placeholder="Last Name">
+                </div>
+                <div class="inputs">
+                    <input type="email" id="email" name="email" required class="input" type="email" placeholder="E-mail">
+                </div>
+                <div class="inputs">
+                    <input type="text" id="username" name="username" required class="input" placeholder="Username">
+                </div>
+                <div class="inputs">
+                    <input type="password" id="paswwordd" name="paswwordd" required class="input" placeholder="Password">
+                </div>
+                <div class="inputs">
+                    <input class="input" type="date" id="fecha" name="fecha" required value="2011-06-26" min="1900-01-01" max="2023-01-01" placeholder="Birthdate">
+                </div>
+                <div class="button">
+                    <button class="register-button" type="submit">Register</button>
+                </div>
+            </form>
         </div>
     </div>
+    <div id="message"></div>
+    <script src="../scripts/register.js"></script>
 </body>
 </html>

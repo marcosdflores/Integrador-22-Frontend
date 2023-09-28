@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/profilestyles.css">
     <title>Your Profile</title>
 </head>
 <body>
-    <h1>Your Profile</h1>
+    <div class="container">
+        <div class="profile-box">
+            <div class="photo-name">
+                <div class="image">
+                    <img src="" id="imagen" alt="Imagen de perfil">
+                </div>
+                <div class="name">Name</div>
+            </div>
+            <div class="information">
+                <div class="items">
+                    Username
+                    <span id="username"></span>
+                </div>
+                <div class="items">
+                    Name
+                    <span id="username"></span>
+                </div>
+                <div class="items">
+                    Last Name
+                    <span id="apellido"></span>
+                </div>
+                <div class="items">
+                    E-mail
+                    <span id="email"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="edit">Editar perfil</button>
+    </div>
+    <div>
+        <button id="delete">Eliminar mi cuenta</button>
+    </div>
+    <div>
+    <button id="logout">Logout</button>
+    </div>
+    <div id="message"></div>
+
+    <script src="../scripts/profile.js"></script>
 </body>
 </html>

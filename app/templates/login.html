@@ -9,13 +9,15 @@
 <body>
     <div class="container">
         <div class="box-inicio">
-            <p>Log into your account</p>
-            <input placeholder="E-mail">
-            <input placeholder="Password">
-            <button>Login</button>
-            <input type="checkbox">
-            
+            <form id="logearse" method="post" action="#">
+                <p>Log into your account</p>
+                <input id="username" type="text" placeholder="Username" required>
+                <input id="paswwordd" type="password" name="paswwordd" placeholder="Password" required>
+                <button class="btn-login" type="submit">Login</button>  
+            </form>          
         </div>
     </div>
+    <div id="message"></div>
+    <script src="../scripts/login.js"></script>
 </body>
 </html>
