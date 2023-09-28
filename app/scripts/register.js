@@ -25,7 +25,7 @@ function register() {
     .then(response => {
         if (response.status === 201) {
             return response.json().then(data => {
-                window.location.href = 'login.html';
+                window.location.href = "login.html";
             });
         } else {
             return response.json().then(data => {
