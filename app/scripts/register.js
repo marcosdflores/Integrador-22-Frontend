@@ -14,7 +14,7 @@ function register() {
         imagen: "../assets/avatardefault.png"
     }
 
-    fetch("http://127.0.0.1:5000/register", {
+    fetch("http://127.0.0.1:5000/usuarios/crear", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
