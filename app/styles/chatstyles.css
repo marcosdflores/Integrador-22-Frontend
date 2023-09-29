@@ -1,0 +1,146 @@
+html,body{
+    margin: 0;
+    height: 100%;
+    background-color: gray;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.left-bar{
+    background-color: rgb(0, 0, 0);
+    width: 80px;
+    height: 100%;
+    transition: 200ms ease;
+
+}
+
+.options{
+    line-height: 100px;
+    margin-left: 30px;
+}
+
+.profile{
+    margin-top: 397px;
+    margin-left: 30px;
+}
+
+a{
+    margin-left: 10px;
+    font-size: 20px;
+    color:white
+}
+
+i{
+    font-size: 23px;
+    color: white;
+}
+
+.left-bar:hover{
+    width: 220px;
+}
+
+.links{
+    display: none;
+    text-decoration: none;
+}
+
+.left-bar:hover .links{
+    display: inline-block;
+}
+
+.right-bar{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 100%;
+}
+
+.channels{
+    line-height: 97px;
+    margin-left: 20px;
+}
+
+.add-channel{
+    margin-top: 397px;
+    margin-left: 20px;
+}
+
+.links2{
+    text-decoration: none;
+    color: black;
+}
+
+.button1{
+    width: 160px;
+    border-radius: 10px ;
+    height: 30px;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.chat-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat{
+    width: 1050px;
+    height: 1000px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    flex-direction: column;
+    overflow-y: scroll;
+
+}
+
+.chat::-webkit-scrollbar {
+    display: none;
+  }
+
+.chat-container{
+    width: 1050px;
+    height: 550px;
+}
+
+.input-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+input{
+    width: 950px;
+    height: 30px;
+    border-radius: 50px;
+    border-color: transparent;
+}
+
+.send-button{
+    width: 50px;
+    border-radius: 50px;
+    height: 30px;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.message{
+    background-color: rgb(124, 124, 218);
+    height: 40px;
+    width: 800px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+
+
+
+}
