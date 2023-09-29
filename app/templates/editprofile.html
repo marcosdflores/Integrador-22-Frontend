@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/editstyles.css">
+    <title>Editar Perfil</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Editar Perfil</h1>
+        <form id="editForm">
+            <input type="hidden" id="id_usuario" name="id_usuario" value="{{ id_usuario }}">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <!-- Imput oculto para almacenar la URL de la imagen -->
+            <input type="hidden" id="imagen_url" name="imagen_url">
+            <label for="avatar">Seleccionar Avatar</label>
+            <div id="avatarContainer">
+                <div class="avatar-card" data-avatar="avatar1.png">
+                    <img src="../assets/avatar1.png" alt="Avatar 1">
+                </div>
+                <div class="avatar-card" data-avatar="avatar2.png">
+                    <img src="../assets/avatar2.png" alt="Avatar 2">
+                </div>
+                <div class="avatar-card" data-avatar="avatar2.png">
+                    <img src="../assets/avatar3.png" alt="Avatar 3">
+                </div>
+                <div class="avatar-card" data-avatar="avatar2.png">
+                    <img src="../assets/avatar4.png" alt="Avatar 4">
+                </div>
+                <div class="avatar-card" data-avatar="avatar2.png">
+                    <img src="../assets/avatar5.png" alt="Avatar 5">
+                </div>
+                <div class="avatar-card" data-avatar="avatar2.png">
+                    <img src="../assets/avatar6.png" alt="Avatar 6">
+                </div>
+            </div>
+            <br>
+            <img src="" id="imagenPreview" alt="">
+            <br>
+            <button type="submit">Guardar cambios</button>
+        </form>
+    </div>
+
+    <a id="volver" href="profile.html">Volver</a>
+
+    <div id="message"></div>
+
+    <script src="../scripts/editprofile.js"></script>
+</body>
+</html>

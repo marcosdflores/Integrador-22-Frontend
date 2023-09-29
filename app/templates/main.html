@@ -3,17 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/mainstyles.css">
-    <title>Discord Clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../static/styles/mainstyles.css">
+    <title>Discord Clone by 22</title>
 </head>
 <body>
-    <div class="container">
-        <div class="left-bar">
-            <div class="options"><i class="fa-solid fa-circle-plus"></i><a href="#" class="links">Add a Server</a></div>
-            <div class="options"><i class="fa-solid fa-compass"></i><a href="#" class="links">Browse Servers</a></div>
-            <div class="profile"><i class="fa-solid fa-user"></i><a href="#" class="links">Your Profile</a></div>
+    <div id="sidemenu" class="menu-colapsed">
+        <div id="header">
+            <div id="title"><span>Discord Clone 22</span></div>
+            <div id="menu-botn">
+                <div class="btn-brger"></div>
+                <div class="btn-brger"></div>
+                <div class="btn-brger"></div>
+            </div>
         </div>
+        <!-- Profile -->
+        <div id="profile">
+            <div id="photo"><img src="../static/styles/assets/avatardefault.webp" alt="perfil-photo"></div>
+            <div id="name"><span>Bienvenido</span></div>
+            <div id="usuario"></div>
+        </div>
+        <!-- itms -->
+        <div id="menu-items">
+            <div class="item">
+                <a href="profile.html">
+                    <div class="icon"><img src="../static/styles/assets/bxs-user.svg" alt="my-pf"></div>
+                    <div class="title"><span>Profile</span></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="servers.html">
+                    <div class="icon"><img src="../static/styles/assets/bxs-shapes.svg" alt="my-sv"></div>
+                    <div class="title"><span>My servers</span></div>
+                </a>
+            </div>
+        </div>   
     </div>
+
+    <main class="main-container">
+        <span>Welcome to Discord Clone 22</span>
+        <div class="botones">
+            <button id="expl-sv">
+                <div ><img src="../static/styles/assets/bx-search.svg" alt="explore"></div>
+                <div ><span>Explore</span></div>
+            </button>
+            <button id="ad-sv">
+                <div><img src="../static/styles/assets/bx-plus.svg" alt="add-srver"></div>
+                <div><span>Add Server</span></div>
+            </button>
+        </div>
+        <section id="contenido-seccion">
+            <div id="integs" class="integrantes">
+                <h2>Aplicacion</h2>
+                <h3>discord clone 22</h3>
+                <h3>discord clone 22</h3>
+                <h3>discord clone 22</h3>
+                <h3>discord clone 22</h3>
+            </div>
+            <div >
+                <form id="conteiner-formulario" method="post">
+                    <div class="formil">
+                        <label for="server">New Servers Name</label>
+                        <input type="text" id="name-sv"/>
+                        <label for="chanel">New Channels Name</label>
+                        <input type="text" id="name-channel"/>
+                        <label>Fecha: </label><span id="fecha-hoy"></span>
+                        <button id="btn-crea" class="btn-add" type="button">Crear</button>
+                    </div>
+                </form>
+            </div>
+            <div id="buscar">
+                <h2>Explore new servers</h2>
+            </div>
+        </section>
+    </main>
+    <script src="../static/scripts/app_sv.js"></script>
 </body>
 </html>

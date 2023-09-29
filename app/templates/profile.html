@@ -10,28 +10,42 @@
     <div class="container">
         <div class="profile-box">
             <div class="photo-name">
-                <div class="image"></div>
+                <div class="image">
+                    <img src="" id="imagen" alt="Imagen de perfil">
+                </div>
                 <div class="name">Name</div>
             </div>
             <div class="information">
                 <div class="items">
                     Username
-                    <button class="button">Edit</button>
+                    <span id="username"></span>
                 </div>
                 <div class="items">
                     Name
-                    <button class="button">Edit</button>
+                    <span id="nombre"></span>
                 </div>
                 <div class="items">
                     Last Name
-                    <button class="button">Edit</button>
+                    <span id="apellido"></span>
                 </div>
                 <div class="items">
                     E-mail
-                    <button class="button">Edit</button>
+                    <span id="email"></span>
                 </div>
             </div>
         </div>
     </div>
+    <div>
+        <button id="edit">Editar perfil</button>
+    </div>
+    <div>
+        <button id="delete">Eliminar mi cuenta</button>
+    </div>
+    <div>
+    <button id="logout">Logout</button>
+    </div>
+    <div id="message"></div>
+
+    <script src="../scripts/profile.js"></script>
 </body>
 </html>

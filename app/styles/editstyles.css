@@ -1,0 +1,11 @@
+.avatar-card {
+    display: inline-block;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+/* Estilo para el seleccionado */
+.avatar-card.selected {
+    border: 2px solid blue;
+}

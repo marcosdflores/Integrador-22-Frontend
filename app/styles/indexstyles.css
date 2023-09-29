@@ -15,7 +15,7 @@ body{
 
 
 .left{
-    font-size: 150px;
+    font-size: 125px;
     font-family: "Comfortaa", "Roboto", sans-serif;
     font-weight: bold;
     line-height: 40px;
@@ -36,21 +36,6 @@ body{
 }
 
 .button1{
-    height: 50px;
-    width: 400px;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family:"Comfortaa", "Roboto", sans-serif;
-    background-color: white;
-    color: black;
-    border-color: transparent;
-    animation-name: slidein2;
-    animation-duration: 3s;
-
-}
-
-.button2{
-    height: 50px;
     width: 400px;
     border-radius: 20px;
     font-size: 20px;
@@ -59,8 +44,21 @@ body{
     color: black;
     border-color: transparent;
     animation-name: slidein2;
+    animation-duration: 3s;
+    padding: 20px 80px;
+
+}
+
+.button2{
+    border-radius: 20px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    color: black;
+    border-color: transparent;
+    animation-name: slidein2;
     animation-duration: 5s;
-    
+    padding: 20px 80px;    
 
 }
 
@@ -68,12 +66,14 @@ body{
 
 
 .Discord{
+    text-transform: uppercase;
     animation-duration: 3s;
     animation-name: slidein;
 }
 
 
 .Clone{
+    text-transform: uppercase;
     animation-duration: 5s;
     animation-name: slidein;
 }
@@ -115,4 +115,19 @@ body{
     margin: 40px;
     font-size: 30px;
     font-family: "Comfortaa", "Roboto", sans-serif;
+}
+
+a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.button1:hover {
+    background-color: gold;
+    
+}
+
+.button2:hover {
+    background-color: yellow;
 }
