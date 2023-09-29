@@ -6,7 +6,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 function login() {
     const data = {
         username: document.getElementById("username").value,
-        contrasena: document.getElementById("paswwordd").value,
+        paswwordd: document.getElementById("paswwordd").value,
     };
 
     fetch("http://127.0.0.1:5000/login", {
