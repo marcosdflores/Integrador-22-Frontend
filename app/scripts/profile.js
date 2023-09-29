@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
 const editButton = document.getElementById("edit");
 
 editButton.addEventListener("click", function () {
-  window.location.href = "editar-perfil.html";
+  window.location.href = "editprofile.html";
 });
 
 document.getElementById("logout").addEventListener("click", logout);
